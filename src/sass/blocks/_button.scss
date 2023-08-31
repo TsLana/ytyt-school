@@ -1,0 +1,16 @@
+.button{
+    width: 249px;
+    height: 70px;
+    background: #F15525;
+    border-radius:82px;
+    border:none;
+    &_mini{
+        width: 78px;
+        height: 30px;
+        background: #38BFF2;
+    }
+    &:hover{
+        background: $main_color;
+        transition: 0.5s all;
+    }
+}
