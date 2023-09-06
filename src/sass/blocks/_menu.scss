@@ -19,7 +19,6 @@ header{
     @media(max-width: 992px){
 		justify-content: flex-start;	  
     }
-    
 
     &__logo{
         img{
@@ -59,6 +58,7 @@ header{
             }
         }
         &:hover{
+            text-decoration: none;
             color:$main_color;
             transition: 0.5s all;
         }
@@ -68,3 +68,67 @@ header{
         }
     }
 }
+
+.submenu{
+    display: none;
+}
+
+    @media(max-width: 992px){
+        .submenu{
+            position: fixed;
+            z-index: 1000;
+            width: 340px;
+            height: 100vh;
+            background: #fff;
+            right: -100%;
+            top: 10px;
+            border-radius: 20px;
+            transition: 0.6s all;
+            padding: 75px 34px 34px 0;
+            &_active {
+                right: 10px;
+        }
+        &__close{
+            position: absolute;
+            top: 25px;
+            right: 20px;
+        }
+        ul{
+            margin: 0;
+	        list-style-type: none;
+            li{
+                margin-bottom: 25px;
+                &:last-child{
+                    margin-bottom: 240px;
+                }
+                a{
+                    color: #22253B;
+                    font-size: 20px;
+                    font-weight: 500;
+                   
+                    &:hover{
+                        text-decoration: none;
+                        color:$main_color;
+                        transition: 0.5s all;
+                    }
+                }
+            }
+
+        }
+        &__btn{
+            margin-left: 40px;
+        }
+
+    }
+
+    @media(max-width: 768px){
+        .submenu{
+            width: 260px;
+        }
+
+        
+    }
+
+}
+
+

@@ -9,13 +9,6 @@
       background: url('../img/main/elipse.png') #F9F8FD center top/cover no-repeat;
    }
 
-   @media(max-width: 992px){
-      &::before{
-         content: "";
-         transform: rotate(90deg);
-}
-   }
-
    &__wrapper {
       position: relative;
 
