@@ -1,0 +1,19 @@
+@media(max-width: 992px){
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform:translateY(-50%);
+        width: 18px;
+        height: 15px;
+        span{
+            display: block;
+            height: 2px;
+            width: 18px;
+            background:$main_color;
+            margin-bottom: 3px;
+            transition: 0.5s all;
+        }
+    }
+ }

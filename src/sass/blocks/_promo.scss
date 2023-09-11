@@ -1,0 +1,133 @@
+.promo {
+   position: relative;
+   min-height: 600px;
+   padding: 10px 0 40px;
+   background: url('../img/main/elipse.png') #F9F8FD right top/auto no-repeat;
+   // clip-path: path('M792 555C792 570.496 789.62 585.84 784.997 600.157C780.373 614.473 773.597 627.481 765.054 638.439C756.511 649.396 746.369 658.088 735.207 664.018C724.045 669.948 712.082 673 700 673C687.918 673 675.955 669.948 664.793 664.018C653.631 658.088 643.489 649.396 634.946 638.439C626.403 627.481 619.627 614.473 615.003 600.157C610.38 585.84 608 570.496 608 555L700 555H792Z');
+
+   @media(max-width: 1200px){
+      background: url('../img/main/elipse.png') #F9F8FD center top/cover no-repeat;
+   }
+
+   &__wrapper {
+      position: relative;
+
+      @media(max-width: 992px){
+         display: flex;
+         flex-direction: column;
+         align-items:center;
+     }
+   }
+
+   h1 {
+      width: 635px;
+      color: #22253B;
+      font-size: 46px;
+      font-weight: 500;
+      line-height: 1;
+      margin-top: 70px;
+
+      @media(max-width: 1200px){
+         font-size: 32px;
+         width: 450px;
+         margin-top: 100px;
+      }
+
+      @media(max-width: 992px){
+         font-size: 24px;
+         margin-top: 25px;
+         text-align: center;
+         width: 100%;
+     }
+      .red {
+         color: #F15525;
+         font-weight: 600;
+      }
+
+      .world-weight {
+         font-style: italic;
+         font-weight: 600;
+      }
+   }
+
+   &__text {
+      width: 365px;
+
+      @media(max-width: 1200px){
+         width: 320px;
+      }
+
+      @media(max-width: 992px){
+         width: 100%;
+     }
+
+      hr {
+         background: #DEDEDE;
+         height: 1px;
+      }
+
+      p {
+         color: #22253B;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 1.4;
+
+         @media(max-width: 1200px){
+            font-size: 14px;
+         }
+
+         @media(max-width: 992px){
+            font-size: 12px;
+            text-align: center;
+        }
+      }
+   }
+
+   &__btn {
+      margin-top: 18px;
+
+      img {
+         margin-left: 12px;
+      }
+   }
+
+   &__picture {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 390px;
+
+      @media(max-width: 1200px){
+         width: 270px;
+         right: 70px;
+      }
+
+      @media(max-width: 992px){
+         position: static;
+         width: 210px;
+         margin-top: 75px;
+     }
+
+      img{
+         width: 100%;
+      }
+   }
+
+   &__elipse {
+      position: relative;
+      width: 37px;
+      height: 37px;
+      background-color: #fff;
+      border-radius: 100%;
+      margin: 80px auto 0;
+
+      @media(max-width: 992px){
+         margin: 15px auto 0;
+      }
+
+      img {
+         position: absolute;
+         transform: translate(11px, 11px);
+         }
+   }
+}
